@@ -5,7 +5,6 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react() ,tailwindcss()],
-  base: "/",
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
@@ -18,7 +17,7 @@ export default defineConfig({
   },
   server: {
     // Specify the development server port
-    port: 3001,
-    open: true 
-  }
-})
+    port: 3001
+  },
+  base: "/",
+});
