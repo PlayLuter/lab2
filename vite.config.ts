@@ -15,9 +15,6 @@ export default defineConfig({
         entryFileNames: 'assets/[name]-[hash].js'
       }
     }
-  },
-  server: {
-    // Specify the development server port
-    port: 3001,
   }
+
 })
